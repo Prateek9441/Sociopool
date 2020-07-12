@@ -21,7 +21,7 @@ public class TravellerServiceImpl implements TravellerService {
 
 	public void saveEntity(Traveller_Model entity) {
 		Traveller ts = modelMapper.map(entity, Traveller.class);
-		Traveller unts = tr.findByUnix(entity.getUnix());
+		Traveller unts = tr.findByUnix(entity.getUserName(),entity.getUnix());
 		if (unts != null) {
 			unts.setDistance(entity.getDistance());
 			tr.save(unts);

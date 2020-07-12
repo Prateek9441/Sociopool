@@ -10,7 +10,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TravellerRepo extends JpaRepository<Traveller, Long> {
 
-	public Traveller findByUnix(int unix);
+	@Query(value = "select * from traveller where username=:username and unix= :unix", nativeQuery = true)
+	public Traveller findByUnix(String username,int unix);
 
 	@Modifying(clearAutomatically = true)
 	@Query(value = "update Traveller set distance=:distance where username=:username and unix=:unix")
