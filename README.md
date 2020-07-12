@@ -3,7 +3,7 @@ Sociopool Assignment
 
 Two rest endpoint has been created and can be checked with postman.   
 
-1.  To save distance, following json format will be used on url "localhost:8085/save" :     
+1.  To save distance, following json format will be used on url "localhost:8085/save" (Post Method) :     
         {   
 	"userName":"abcd",   
 	"distance":"80",   
@@ -11,7 +11,7 @@ Two rest endpoint has been created and can be checked with postman.
 	"time":"01:30"  
    	}      
   
-2. To get the distance, following json format will be used on url "localhost:8085/get" :   
+2. To get the distance, following json format will be used on url "localhost:8085/get" (Get Method) :   
 
   {     
 	"userName":"abcd",    
