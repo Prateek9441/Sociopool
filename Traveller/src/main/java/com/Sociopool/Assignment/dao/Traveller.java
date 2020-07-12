@@ -16,26 +16,18 @@ import lombok.NoArgsConstructor;
 @Data
 public class Traveller {
 
-	/*
-	 * 1.Username
-	 * 2.Distance
-	 * 3.TimeStamp
-	 * 
-	 * */
-	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id",nullable=false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id", nullable = false)
 	private long id;
-	
-	@Column(name="username")
+
+	@Column(name = "username")
 	private String username;
-	
-	@Column(name="distance")
+
+	@Column(name = "distance")
 	private String distance;
-	
-	@Column(name="unix")
+
+	@Column(name = "unix")
 	private int unix;
-	
-	
+
 }

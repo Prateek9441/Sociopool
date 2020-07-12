@@ -17,5 +17,5 @@ public class Traveller_Model {
 	private String startTime;
 	private String endTime;
 	private int endunix;
-	
+
 }
